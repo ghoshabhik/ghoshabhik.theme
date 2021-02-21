@@ -62,7 +62,7 @@ function converttoHtml(str) {
 document.addEventListener('DOMContentLoaded', (event) => {
     const queryString = window.location.search.substr(6, window.location.search.length);
     console.log(queryString);
-    fetch(`http://localhost:8888/.netlify/functions/get-pagenated-posts-list?page=${queryString}`)
+    fetch(`https://kind-hamilton-640e4e.netlify.app/api/get-pagenated-posts-list?page=${queryString}`)
         .then(response => response.json())
         .then(data => {
             //console.log(data[0].title)
