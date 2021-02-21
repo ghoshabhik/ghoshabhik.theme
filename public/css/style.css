@@ -22,4 +22,7 @@ navbar-brand{
     scale: inherit;
 }
 
+.mark-active{
+    color: orange;
+}
 
