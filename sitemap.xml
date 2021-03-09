@@ -2,73 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/categories/article/</loc>
+    <loc>https://ghoshabhik.github.io/categories/article/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://ghoshabhik.github.io/categories/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/cloud/</loc>
+    <loc>https://ghoshabhik.github.io/tags/cloud/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/datawarehouse/</loc>
+    <loc>https://ghoshabhik.github.io/tags/datawarehouse/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/projects/project1/</loc>
+    <loc>https://ghoshabhik.github.io/projects/project1/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/posts/page3/</loc>
+    <loc>https://ghoshabhik.github.io/posts/page3/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://ghoshabhik.github.io/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/projects/project2/</loc>
+    <loc>https://ghoshabhik.github.io/projects/project2/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://ghoshabhik.github.io/posts/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/posts/</loc>
+    <loc>https://ghoshabhik.github.io/tags/posts/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/project/</loc>
+    <loc>https://ghoshabhik.github.io/tags/project/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/categories/project/</loc>
+    <loc>https://ghoshabhik.github.io/categories/project/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/projects/</loc>
+    <loc>https://ghoshabhik.github.io/projects/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/something/</loc>
+    <loc>https://ghoshabhik.github.io/tags/something/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://ghoshabhik.github.io/tags/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/posts/post1/</loc>
+    <loc>https://ghoshabhik.github.io/posts/post1/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/testblog/</loc>
+    <loc>https://ghoshabhik.github.io/tags/testblog/</loc>
     <lastmod>2021-03-07T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/tags/</loc>
+    <loc>https://ghoshabhik.github.io/tags/tags/</loc>
     <lastmod>2021-03-07T20:11:24+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/test/</loc>
+    <loc>https://ghoshabhik.github.io/tags/test/</loc>
     <lastmod>2021-03-07T20:11:24+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/posts/welcome/</loc>
+    <loc>https://ghoshabhik.github.io/posts/welcome/</loc>
     <lastmod>2021-03-07T20:11:24+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/posts/post2/</loc>
+    <loc>https://ghoshabhik.github.io/posts/post2/</loc>
     <lastmod>2021-03-05T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/somethingelse/</loc>
+    <loc>https://ghoshabhik.github.io/tags/somethingelse/</loc>
     <lastmod>2021-03-05T20:16:13+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://ghoshabhik.github.io/about/</loc>
     <priority>0</priority>
   </url>
 </urlset>
