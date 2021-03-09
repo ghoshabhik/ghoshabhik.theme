@@ -67,5 +67,8 @@
   </url><url>
     <loc>http://example.org/tags/somethingelse/</loc>
     <lastmod>2021-03-05T20:16:13+05:30</lastmod>
+  </url><url>
+    <loc>http://example.org/about/</loc>
+    <priority>0</priority>
   </url>
 </urlset>
