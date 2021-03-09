@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tags on My New Hugo Site</title>
+    <link>http://example.org/tags/tags/</link>
+    <description>Recent content in tags on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Mar 2021 20:11:24 +0530</lastBuildDate><atom:link href="http://example.org/tags/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>http://example.org/posts/welcome/</link>
+      <pubDate>Sun, 07 Mar 2021 20:11:24 +0530</pubDate>
+      
+      <guid>http://example.org/posts/welcome/</guid>
+      <description>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.</description>
+    </item>
+    
+  </channel>
+</rss>
