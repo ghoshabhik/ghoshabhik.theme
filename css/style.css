@@ -44,7 +44,7 @@ body{
 }
 .recent-blogs-title{
     font-size: 40px;
-    margin-bottom: -20px;
+    margin-bottom: -25px;
     z-index: 10;
     /* color: rgb(59,171,135); */
 }
@@ -161,4 +161,17 @@ a{
       margin-top: -80px;
     }
 
+}
+.key-skills>div>div>i{
+    font-size: 40px;
+    color: gray;
+}
+
+.contact-section{
+    margin-top: 200px !important;
+}
+
+.resume-btn{
+    background-color: rgb(59,171,135);
+    color: white;
 }
