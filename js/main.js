@@ -25,6 +25,27 @@ window.addEventListener("DOMContentLoaded", function() {
       var data = new FormData(form);
       ajax(form.method, form.action, data, success, error);
     });
+
+    var recentBioTitle = document.querySelector('.recent-bio-title')
+    var recentWorkTitle = document.querySelector('.recent-works-title')
+    var navHeading = document.querySelector('.title-nav')
+
+
+    anime({
+      targets: recentBioTitle,
+      translateY: 35,
+      duration: 2000
+    });
+    anime({
+      targets: recentWorkTitle,
+      translateY: 35,
+      duration: 2000
+    });
+    // anime({
+    //   targets: navHeading,
+    //   translateY: 50,
+    //   duration: 2000
+    // });
   });
   
   // helper function for sending an AJAX request
