@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bio on Home</title>
+    <link>https://ghoshabhik.github.io/tags/bio/</link>
+    <description>Recent content in bio on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Mar 2021 20:16:13 +0530</lastBuildDate><atom:link href="https://ghoshabhik.github.io/tags/bio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, World</title>
+      <link>https://ghoshabhik.github.io/posts/hello-world/</link>
+      <pubDate>Wed, 17 Mar 2021 20:16:13 +0530</pubDate>
+      
+      <guid>https://ghoshabhik.github.io/posts/hello-world/</guid>
+      <description>Who am I  I am a Data Solution Architect with over 13 years of experience in software engineering. I have led design, development and management of IT Solution for many fortune five hundred companies, SMBs and startups during my service in this industry.
+I am commited to help organizations achieve maximum benefits from their technology investments and push their IT operational boundaries. I have helped several customers discovering their wealth in data, monitizing and setting up analytical platforms, in cloud migration journey and simplifying legacy systems integration while keeping their data and infrastructure secured than ever before.</description>
+    </item>
+    
+  </channel>
+</rss>
