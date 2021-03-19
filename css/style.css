@@ -18,24 +18,30 @@ body{
 }
 .nav-heading{
     font-family: Pacifico;
-    font-size: 60px;
+    font-size: 40px;
 }
-
-.intro-center{
-    
+.hero-section{
+    /* background-color: aquamarine; */
+    /* height: 600px; */
 }
-.intro-section{
-    /* height: 200px; */
+.img-thumbnail{
+    width:200px;
 }
-.intro-right{
+.profile-intro{
+    /* background-color: beige; */
+}
+/* .intro-right{
     padding-top:  20px;
-}
+} */
 .intro-name{
     /* font-family: Yellowtail; */
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 600;
-    color: rgb(59,171,135);
+    /* color: rgb(59,171,135); */
+    background-image: linear-gradient(to top , #d2f6c5 , rgb(59,171,135) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media only screen and (max-width: 600px) {
     .intro-center{
@@ -117,15 +123,17 @@ a{
     border-radius: 8px;
     padding: 5px;
 } */
-
+.project-icon{
+    font-size: 30px;
+    color: rgb(59,171,135);
+}
 .article-date{
     font-size: 15px;
 }
 .article-title-list h3 a{
-    font-size: 40px;
+    font-size: 30px;
 }
 .article-title-list h3 a:hover{
-    font-size: 40px;
     color: black;
 }
 .article-tags-list{
