@@ -20,32 +20,15 @@ window.addEventListener("DOMContentLoaded", function() {
 
     // handle the form submission event
 
-    form.addEventListener("submit", function(ev) {
-      ev.preventDefault();
-      var data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
-    });
+    if(form){
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    }
+    
 
-    var recentBioTitle = document.querySelector('.recent-bio-title')
-    var recentWorkTitle = document.querySelector('.recent-works-title')
-    var navHeading = document.querySelector('.title-nav')
-
-
-    anime({
-      targets: recentBioTitle,
-      translateY: 35,
-      duration: 2000
-    });
-    anime({
-      targets: recentWorkTitle,
-      translateY: 35,
-      duration: 2000
-    });
-    // anime({
-    //   targets: navHeading,
-    //   translateY: 50,
-    //   duration: 2000
-    // });
   });
   
   // helper function for sending an AJAX request
@@ -64,3 +47,103 @@ window.addEventListener("DOMContentLoaded", function() {
     };
     xhr.send(data);
   }
+
+
+// Logic for Dark mode switch
+window.addEventListener('DOMContentLoaded', (event) => {
+  // console.log('DOM fully loaded and parsed');
+  var body = document.getElementsByTagName("BODY")[0];
+  const lightButton = document.getElementById('light-button');
+  const darkButton = document.getElementById('dark-button');
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+
+  if(!localStorage.mode){
+      localStorage.mode = 'dark';
+      lightButton.classList.remove('hidden');
+  } else {
+      if(localStorage.mode === 'light'){
+          darkButton.classList.remove('hidden');
+          lightButton.classList.add('hidden');
+          body.classList.toggle('dark');
+      }
+      if(localStorage.mode === 'dark'){
+          lightButton.classList.remove('hidden');
+          darkButton.classList.add('hidden');
+          
+      }
+  }
+  
+  lightButton.addEventListener('click', (e) => {
+      localStorage.mode = 'light';
+      darkButton.classList.remove('hidden');
+      lightButton.classList.add('hidden');
+      body.classList.toggle('dark');
+  })
+
+  darkButton.addEventListener('click', (e) => {
+      localStorage.mode = 'dark';
+      lightButton.classList.remove('hidden');
+      darkButton.classList.add('hidden');
+      body.classList.toggle('dark');
+  })
+
+  mobileMenuButton.addEventListener('click', (e) => {
+      mobileMenu.classList.toggle('hidden');
+  })
+
+  var currentPath = window.location.pathname
+  currentPath = currentPath.substr(1,currentPath.length)
+  //console.log(currentPath)
+  if(currentPath.length === 0){
+    document.getElementById('home').classList.add('font-semibold')
+    document.getElementById('home').classList.add('bg-gradient-to-r')
+    document.getElementById('home').classList.add('from-purple-500')
+    document.getElementById('home').classList.add('to-green-500')
+    document.getElementById('home').classList.add('text-transparent')
+    document.getElementById('home').classList.add('bg-clip-text')
+  }
+  if(currentPath.includes('posts')){
+    document.getElementById('blog').classList.add('font-semibold')
+    document.getElementById('blog').classList.add('bg-gradient-to-r')
+    document.getElementById('blog').classList.add('from-purple-500')
+    document.getElementById('blog').classList.add('to-green-500')
+    document.getElementById('blog').classList.add('text-transparent')
+    document.getElementById('blog').classList.add('bg-clip-text')
+  }
+  if(currentPath.includes('projects')){
+    document.getElementById('project').classList.add('font-semibold')
+    document.getElementById('project').classList.add('bg-gradient-to-r')
+    document.getElementById('project').classList.add('from-purple-500')
+    document.getElementById('project').classList.add('to-green-500')
+    document.getElementById('project').classList.add('text-transparent')
+    document.getElementById('project').classList.add('bg-clip-text')
+  }
+  if(currentPath.includes('about')){
+    document.getElementById('bio').classList.add('font-semibold')
+    document.getElementById('bio').classList.add('bg-gradient-to-r')
+    document.getElementById('bio').classList.add('from-purple-500')
+    document.getElementById('bio').classList.add('to-green-500')
+    document.getElementById('bio').classList.add('text-transparent')
+    document.getElementById('bio').classList.add('bg-clip-text')
+  }
+
+});
+
+// Add Back Button Dynamically
+const backButton = document.getElementById('back-button')
+const backButtonText = document.getElementById('back-button-text')
+var currentPath = window.location.pathname
+currentPath = currentPath.substr(1,currentPath.length)
+if(backButton){
+  console.log('backbutton found')
+  if(currentPath.includes('posts')){
+    backButton.href = '/posts'
+    backButtonText.innerText = 'All Posts'
+  }
+  if(currentPath.includes('projects')){
+    backButton.href = '/projects'
+    backButtonText.innerText = 'All Projects'
+  }
+}

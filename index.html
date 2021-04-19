@@ -4,935 +4,1155 @@
 <head>
 	<meta name="generator" content="Hugo 0.81.0" />
     
-    
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QDF9PMWZKR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QDF9PMWZKR');
-</script>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico" />
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Abhik Ghosh  Home</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Abhik Ghosh Home</title>
 </head>
 
-<body>
-    <header>
-        
-        <div class="line-bar"></div>
-        <nav class="navbar navbar-light mt-3">
-            <div class="container d-flex flex-column justify-content-center">
-                <div class="text-center title-nav">
-                    <a href="/"><span class="navbar-brand mb-0 h1 nav-heading"> abhikghosh</span></a>
+<body class="text-base dark">
+    <div class="min-h-screen bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">
+        <header>
+            
+            <div class="w-full h-2 
+            bg-gradient-to-r from-blue-500 to-green-500
+            dark:to-blue-500 dark:from-green-500
+            "></div>
+
+
+            <nav>
+                <div class="container mx-auto flex justify-between items-center px-8 pt-2 mb-2">
+                    
+                    <div>
+                        <a class="inline-block pt-8" href="/">
+                            <h1
+                                class="text-6xl font-semibold leading-5 h-20 bg-gradient-to-tr from-purple-500 to-green-500 text-transparent bg-clip-text">
+                                a.</h1>
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <ul class="hidden md:flex space-x-3">
+                            <li class="">
+                                <a class="" href="/" id="home">HOME</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="/posts/" id="blog">BLOG</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="/projects/" id="project">PROJECTS</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="/about/" id="bio">BIO</a>
+                            </li>
+                        </ul>
+                        <div class="mx-3">
+                            <button id="light-button"
+                                class="bg-gray-200 text-gray-700 border-none rounded-full px-2 py-2 hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                            </button>
+                            <button id="dark-button"
+                                class="bg-gray-700 text-gray-200 border-none rounded-full px-2 py-2 hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="mobile-menu-button" class="flex flex-col md:hidden">
+                            <button class="ring-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h7" />
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+
                 </div>
-                <div class="">
-                    <ul class="list-group list-group-horizontal">
+                
+                <div id="mobile-menu" class="hidden my-5">
+                    <ul class="block uppercase text-center mt-4 space-y-5 font-semibold">
                         <li class="">
-                            <a class="nav-link" href="/">HOME</a>
+                            <a class="" href="/">HOME</a>
                         </li>
                         <li class="">
-                            <a class="nav-link" href="/posts/">BLOG</a>
+                            <a class="" href="/posts/">BLOG</a>
                         </li>
                         <li class="">
-                            <a class="nav-link " href="/projects/">PROJECTS</a>
+                            <a class="" href="/projects/">PROJECTS</a>
                         </li>
                         <li class="">
-                            <a class="nav-link" href="/about/">BIO</a>
+                            <a class="" href="/about/">BIO</a>
                         </li>
                     </ul>
                 </div>
+            </nav>
+        </header>
+        <main>
+            
+<div class="md:w-4/5 w-full mx-auto">
+    <section class="">
+        <div class="flex flex-col md:flex-row items-center justify-center my-5 py-20 space-y-10 md:px-52
+        bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-200
+        rounded-md shadow-md">
 
+            <div class="mr-5 pb-10 rounded-lg bg-gray-200 dark:bg-gray-700 shadow-md">
+                <img src="/img/profile1.jpg" class="inline-block w-56 rounded-lg border-gray-400 shadow-md transform -translate-x-6 translate-y-6
+                    filter grayscale" alt="Profile Image">
+                <div class="pt-6 flex justify-center">
+                    <a href="https://github.com/ghoshabhik" target="_blank" class="m-4">
+                        <svg role="img" viewBox="0 0 24 24" class="h-6 w-6" fill="currentcolor">
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhik-ghosh/" target="_blank" class="m-4">
+                        <svg role="img" viewBox="0 0 24 24" class="h-6 w-6" fill="currentcolor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhik-ghosh/" target="_blank" class="m-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Layer_1" x="0px" y="0px"  viewBox="-135 22 32 38"
+                            class="h-6 w-6" fill="currentcolor"
+                            enable-background="new -135 22 190 38" xml:space="preserve">
+                            <g>
+                                <polygon fill="currentcolor"
+                                    points="-108.5,56.2 -108.5,46.3 -105.2,46.3 -105.2,59.5 -135,59.5 -135,46.3 -131.7,46.3 -131.7,56.2       " />
+                                <path fill="currentcolor"
+                                    d="M-128,45.4l16.2,3.4l0.7-3.2l-16.2-3.4L-128,45.4z M-125.9,37.6l15,7l1.4-3l-15-7L-125.9,37.6z     M-121.7,30.2l12.7,10.6l2.1-2.5l-12.7-10.6L-121.7,30.2z M-113.5,22.4l-2.7,2l9.9,13.3l2.7-2L-113.5,22.4z M-128.4,52.9h16.6    v-3.3h-16.6V52.9z" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </nav>
-    </header>
-    <main>
-        
-<div class="container mt-5">
-    <section class="hero-section">
-        <div class="row intro-section px-lg-5 my-5">
 
-            <div class="col-lg-2 intro-center profile-image rounded">
-                <img src="/img/profile1.jpg" class="img-thumbnail border boder-success rounded-circle float-end"
-                    alt="...">
-            </div>
-
-            <div class="col-lg-8 intro-right profile-intro">
-                <div class="text-center">
-                    <p class="px-lg-5 mt-0 ">Hello there!</p>
-                    <p class="px-lg-5 mt-2">
-                        <span class="intro-name">I am abhik </span>
+            <div class="md:w-1/2 ml-5">
+                <div class="">
+                    <p class="text-4xl font-light md:px-10">Hello there! 👋</p>
+                    <p class="md:px-10">
+                        <span
+                            class="text-3xl font-semibold bg-gradient-to-tr from-purple-500 to-green-500 text-transparent bg-clip-text">I
+                            am abhik
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline text-blue-200" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                            </svg>
+                        </span>
                     </p>
-                    <p class="px-lg-5 mt-0">
-                        A Data Solution Architect, My day job revolves around cloud data migration,
+                    <p class="mt-10 md:px-10 ">
+                        A Data Solution Architect, my day job revolves around cloud data migration,
                         real-time data pipeline and analytics data platform modernization. I love clean code
                         and functional style
                         programming. Enjoy long run, photography & Seattle coffee.
-                        <a href="/about">Read more on bio page <i
-                                class="fas fa-long-arrow-alt-right text-success"></i></a>
+                        <a class="text-blue-800 dark:text-blue-200" href="/about">Read more on bio page → </a>
                     </p>
-                    <p class="px-lg-5 mt-0 mb-5">Connect with me on <a
-                            href="https://www.linkedin.com/in/abhik-ghosh/" target="_blank">LinkedIn</a> </p>
+                    <p class="mt-10 md:px-10">Connect with me on <a class="text-blue-800 dark:text-blue-200"
+                            href="https://www.linkedin.com/in/abhik-ghosh/" target="_blank">LinkedIn → </a> </p>
                 </div>
             </div>
-            <div class="col-lg-2 intro-center profile-image rounded">
+            <div class="">
             </div>
         </div>
     </section>
-    <section class="recent-blogs">
-        <div class="mt-5 px-lg-5 mx-lg-3 recent-blogs-title">Blogs 📋</div>
-        <div class="border shadow-sm bg-white px-lg-5 mx-lg-4 py-5">
+    <section class="relative">
+        <div class="absolute -md:top-5 md:left-5 -top-7 left-0 text-4xl font-semibold">Blog 📋</div>
+        <div class="flex flex-col items-start justify-center 
+        my-20 py-20 md:px-56 space-y-10 w-full
+        bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-200
+        rounded-md shadow-md">
             
 
-            <div class=" mx-lg-5 px-lg-5">
-                <article class="px-5 my-3">
-                    <div class="article-title-list">
-                        <h3>
-                            <a href="https://ghoshabhik.github.io/posts/hello-world/">Hello, World</a>
-                        </h3>
+            <article class="px-3 w-full">
+                <div class="">
+                    <h3 class="text-3xl font-semibold">
+                        <a class="hover:text-blue-500" href="https://ghoshabhik.github.io/posts/hello-world/">Hello, World</a>
+                    </h3>
+                </div>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    1 minute(s) read
+                </div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start justify-start">
+                    <span class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Mar 17, 2021
+                    </span>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                            text-blue-800 dark:text-blue-200 
+                            rounded-lg" href="https://ghoshabhik.github.io/tags/bio/">bio &vert;</a>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                            text-blue-800 dark:text-blue-200 
+                            rounded-lg" href="https://ghoshabhik.github.io/tags/someotherbio/">someotherbio &vert;</a>
+                        
                     </div>
-                    <div class="text-muted">
-                        Reading time: 1 minutes
-                    </div>
-                    <div class="article-meta-list">
-                        <span class="article-date text-muted font-weight-light">
-                            Mar 17, 2021
-                        </span>
-                        <div class="article-tags-list">
-                            <i class="fas fa-tags text-success"></i>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/bio/">bio |</a>
-                            
-                        </div>
-                    </div>
-                    <div class="article-body-list">
-                        making this the first true generator on the Internet. It uses a dictionary of
-                    </div>
-                    <a href="https://ghoshabhik.github.io/posts/hello-world/" class="text-dark pt-3 read-more">Read more <i
-                            class="fas fa-long-arrow-alt-right"></i></a>
-                </article>
-            </div>
-
-            
-
-            <div class=" mx-lg-5 px-lg-5">
-                <article class="px-5 my-3">
-                    <div class="article-title-list">
-                        <h3>
-                            <a href="https://ghoshabhik.github.io/posts/page3/">Hello2 this is to make the heading long...</a>
-                        </h3>
-                    </div>
-                    <div class="text-muted">
-                        Reading time: 1 minutes
-                    </div>
-                    <div class="article-meta-list">
-                        <span class="article-date text-muted font-weight-light">
-                            Mar 7, 2021
-                        </span>
-                        <div class="article-tags-list">
-                            <i class="fas fa-tags text-success"></i>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/posts/">posts |</a>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/testblog/">testblog |</a>
-                            
-                        </div>
-                    </div>
-                    <div class="article-body-list">
-                        making this the first true generator on the Internet. It uses a dictionary of
-                    </div>
-                    <a href="https://ghoshabhik.github.io/posts/page3/" class="text-dark pt-3 read-more">Read more <i
-                            class="fas fa-long-arrow-alt-right"></i></a>
-                </article>
-            </div>
+                </div>
+                <div class="">
+                    making this the first true generator on the Internet. It uses a dictionary of
+                </div>
+                <a href="https://ghoshabhik.github.io/posts/hello-world/" class="text-blue-800 dark:text-blue-200">Read more → </a>
+            </article>
 
             
 
-            <div class=" mx-lg-5 px-lg-5">
-                <article class="px-5 my-3">
-                    <div class="article-title-list">
-                        <h3>
-                            <a href="https://ghoshabhik.github.io/posts/post1/">test</a>
-                        </h3>
+            <article class="px-3 w-full">
+                <div class="">
+                    <h3 class="text-3xl font-semibold">
+                        <a class="hover:text-blue-500" href="https://ghoshabhik.github.io/posts/page3/">Hello2 this is to make the heading long, making it more long...</a>
+                    </h3>
+                </div>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    1 minute(s) read
+                </div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start justify-start">
+                    <span class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Mar 7, 2021
+                    </span>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                            text-blue-800 dark:text-blue-200 
+                            rounded-lg" href="https://ghoshabhik.github.io/tags/posts/">posts &vert;</a>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                            text-blue-800 dark:text-blue-200 
+                            rounded-lg" href="https://ghoshabhik.github.io/tags/testblog/">testblog &vert;</a>
+                        
                     </div>
-                    <div class="text-muted">
-                        Reading time: 6 minutes
-                    </div>
-                    <div class="article-meta-list">
-                        <span class="article-date text-muted font-weight-light">
-                            Mar 7, 2021
-                        </span>
-                        <div class="article-tags-list">
-                            <i class="fas fa-tags text-success"></i>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/posts/">posts |</a>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/something/">something |</a>
-                            
-                        </div>
-                    </div>
-                    <div class="article-body-list">
-                        making this the first true generator on the Internet. It uses a dictionary of
-                    </div>
-                    <a href="https://ghoshabhik.github.io/posts/post1/" class="text-dark pt-3 read-more">Read more <i
-                            class="fas fa-long-arrow-alt-right"></i></a>
-                </article>
-            </div>
+                </div>
+                <div class="">
+                    making this the first true generator on the Internet. It uses a dictionary of
+                </div>
+                <a href="https://ghoshabhik.github.io/posts/page3/" class="text-blue-800 dark:text-blue-200">Read more → </a>
+            </article>
 
             
-            <div class="d-flex justify-content-end px-3">
-                <a class="nav-link " href="/posts/">all posts <i
-                        class="fas fa-long-arrow-alt-right text-success"></i></a>
-            </div>
-        </div>
-    </section>
-    <section class="recent-projects">
-        <div class="mt-5 px-lg-5 mx-lg-3 recent-blogs-title">Projects 🚧</div>
-        <div class="border shadow-sm bg-white px-lg-5 mx-lg-4 py-5">
-            
 
-            <div class=" mx-lg-5 px-lg-5">
-                <article class="px-5 my-3">
-                    <div class="article-title-list">
-                        <h3>
-                            <a href="https://ghoshabhik.github.io/projects/project1/">Hello</a>
-                        </h3>
+            <article class="px-3 w-full">
+                <div class="">
+                    <h3 class="text-3xl font-semibold">
+                        <a class="hover:text-blue-500" href="https://ghoshabhik.github.io/posts/post1/">test</a>
+                    </h3>
+                </div>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    6 minute(s) read
+                </div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start justify-start">
+                    <span class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Mar 7, 2021
+                    </span>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                            text-blue-800 dark:text-blue-200 
+                            rounded-lg" href="https://ghoshabhik.github.io/tags/posts/">posts &vert;</a>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                            text-blue-800 dark:text-blue-200 
+                            rounded-lg" href="https://ghoshabhik.github.io/tags/something/">something &vert;</a>
+                        
                     </div>
-                    <div class="text-muted">
-                        Reading time: 0 minutes
-                    </div>
-                    <div class="article-meta-list">
-                        <span class="article-date text-muted font-weight-light">
-                            Mar 7, 2021
-                        </span>
-                        <div class="article-tags-list">
-                            <i class="fas fa-tags text-success"></i>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/project/">project |</a>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/cloud/">cloud |</a>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/datawarehouse/">datawarehouse |</a>
-                            
-                        </div>
-                    </div>
-                    <div class="article-body-list">
-                        making this the first true generator on the Internet. It uses a dictionary of
-                    </div>
-                    <a href="https://ghoshabhik.github.io/projects/project1/" class="text-dark pt-3 read-more">Read more <i
-                            class="fas fa-long-arrow-alt-right"></i></a>
-                </article>
-            </div>
-            
+                </div>
+                <div class="">
+                    making this the first true generator on the Internet. It uses a dictionary of
+                </div>
+                <a href="https://ghoshabhik.github.io/posts/post1/" class="text-blue-800 dark:text-blue-200">Read more → </a>
+            </article>
 
-            <div class=" mx-lg-5 px-lg-5">
-                <article class="px-5 my-3">
-                    <div class="article-title-list">
-                        <h3>
-                            <a href="https://ghoshabhik.github.io/projects/project2/">My Second Project</a>
-                        </h3>
-                    </div>
-                    <div class="text-muted">
-                        Reading time: 0 minutes
-                    </div>
-                    <div class="article-meta-list">
-                        <span class="article-date text-muted font-weight-light">
-                            Mar 7, 2021
-                        </span>
-                        <div class="article-tags-list">
-                            <i class="fas fa-tags text-success"></i>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/project/">project |</a>
-                            
-                            <a href="https://ghoshabhik.github.io/tags/cloud/">cloud |</a>
-                            
-                        </div>
-                    </div>
-                    <div class="article-body-list">
-                        making this the first true generator on the Internet. It uses a dictionary of
-                    </div>
-                    <a href="https://ghoshabhik.github.io/projects/project2/" class="text-dark pt-3 read-more">Read more <i
-                            class="fas fa-long-arrow-alt-right"></i></a>
-                </article>
-            </div>
             
-
-            <div class="d-flex justify-content-end px-3">
-                <a class="nav-link " href="/projects/">all projects <i
-                        class="fas fa-long-arrow-alt-right text-success"></i></a>
+            <div class="absolute bottom-5 right-5 font-semibold
+            text-blue-800 dark:text-blue-200 transform hover:scale-105
+            ">
+                <a class="" href="/posts/">all posts → </a>
             </div>
         </div>
     </section>
+    <section class="relative mt-24">
+        <div class="absolute -md:top-5 md:left-5 -top-7 left-0 text-4xl font-semibold">Projects 🚧</div>
+        <div class="flex flex-col items-start justify-center 
+        my-8 py-20 md:px-56 space-y-10 w-full
+        bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-200
+        rounded-md shadow-md">
+            
+
+
+            <article class="px-3 w-full">
+                <div class="">
+                    <h3 class="text-3xl font-semibold">
+                        <a href="https://ghoshabhik.github.io/projects/project1/">Hello</a>
+                    </h3>
+                </div>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    0 minute(s) read
+                </div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start justify-start">
+                    <span class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Mar 7, 2021
+                    </span>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                        text-blue-800 dark:text-blue-200 
+                        rounded-lg" href="https://ghoshabhik.github.io/tags/project/">project &vert;</a>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                        text-blue-800 dark:text-blue-200 
+                        rounded-lg" href="https://ghoshabhik.github.io/tags/cloud/">cloud &vert;</a>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                        text-blue-800 dark:text-blue-200 
+                        rounded-lg" href="https://ghoshabhik.github.io/tags/datawarehouse/">datawarehouse &vert;</a>
+                        
+                    </div>
+                </div>
+                <div class="">
+                    making this the first true generator on the Internet. It uses a dictionary of
+                </div>
+                <a href="https://ghoshabhik.github.io/projects/project1/" class="text-blue-800 dark:text-blue-200">Read more → </a>
+            </article>
+
+            
+
+
+            <article class="px-3 w-full">
+                <div class="">
+                    <h3 class="text-3xl font-semibold">
+                        <a href="https://ghoshabhik.github.io/projects/project2/">My Second Project</a>
+                    </h3>
+                </div>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    0 minute(s) read
+                </div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start justify-start">
+                    <span class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Mar 7, 2021
+                    </span>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                        text-blue-800 dark:text-blue-200 
+                        rounded-lg" href="https://ghoshabhik.github.io/tags/project/">project &vert;</a>
+                        
+                        <a class="inline-block py-1 px-1 ml-1  
+                        text-blue-800 dark:text-blue-200 
+                        rounded-lg" href="https://ghoshabhik.github.io/tags/cloud/">cloud &vert;</a>
+                        
+                    </div>
+                </div>
+                <div class="">
+                    making this the first true generator on the Internet. It uses a dictionary of
+                </div>
+                <a href="https://ghoshabhik.github.io/projects/project2/" class="text-blue-800 dark:text-blue-200">Read more → </a>
+            </article>
 
+            
 
-    <section>
-        <div class="mt-5 px-lg-5 mx-lg-3 recent-blogs-title">Tags 🏷️</div>
-        <div class="border shadow-sm bg-white px-lg-5 mx-lg-4 py-5">
-            <div class="px-5 my-3">
-                <span>In Blog: </span>
-                
+            <div class="absolute bottom-5 right-5 font-semibold
+            text-blue-800 dark:text-blue-200 transform hover:scale-105">
+                <a class="" href="/projects/">all projects → </a>
+            </div>
+        </div>
+    </section>
 
-                
 
-                
+    <section class="relative mt-24">
+        <div class="absolute -md:top-5 md:left-5 -top-7 left-0 text-4xl font-semibold">Tags 🏷️</div>
+        <div class="flex flex-col items-start justify-center 
+        my-8 py-20 md:px-56 space-y-10 w-full
+        bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-200
+        rounded-md shadow-md">
+            <div class="px-3 w-full flex flex-col space-y-5">
+                <div>
+                    <span>In Blog: </span>
+                    
 
+                    
 
-                
+                    
 
-                
-                
-                
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
+                    
 
-                <a href="/tags/bio">bio</a>
-                <sup>1</sup>
+                    
 
+                    
+                    
 
-                
-                
+                    <a href="/tags/bio" class="text-blue-800 dark:text-blue-200">bio</a>
+                    <sup>1</sup>
 
-                
 
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
+                    
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
+                    
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
-                
+                    
 
-                <a href="/tags/newtag">newtag</a>
-                <sup>1</sup>
+                    
+                    
+                    
 
+                    
+                    
 
-                
-                
+                    <a href="/tags/newtag" class="text-blue-800 dark:text-blue-200">newtag</a>
+                    <sup>1</sup>
 
-                
 
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
+                    
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
-                
+                    
 
-                <a href="/tags/posts">posts</a>
-                <sup>3</sup>
+                    
+                    
+                    
 
+                    
+                    
 
-                
-                
+                    <a href="/tags/posts" class="text-blue-800 dark:text-blue-200">posts</a>
+                    <sup>3</sup>
 
-                
 
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
+                    
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
+                    
 
-                <a href="/tags/something">something</a>
-                <sup>1</sup>
+                    
 
+                    
+                    
 
-                
-                
+                    <a href="/tags/someotherbio" class="text-blue-800 dark:text-blue-200">someotherbio</a>
+                    <sup>1</sup>
 
-                
 
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
-                
+                    
 
-                <a href="/tags/somethingelse">somethingelse</a>
-                <sup>1</sup>
+                    
 
+                    
+                    
 
-                
-                
+                    <a href="/tags/something" class="text-blue-800 dark:text-blue-200">something</a>
+                    <sup>1</sup>
 
-                
 
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
+                    
 
-                <a href="/tags/tags">tags</a>
-                <sup>1</sup>
+                    
+                    
+                    
 
+                    
+                    
 
-                
-                
+                    <a href="/tags/somethingelse" class="text-blue-800 dark:text-blue-200">somethingelse</a>
+                    <sup>1</sup>
 
-                
 
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
-                
+                    
 
-                <a href="/tags/test">test</a>
-                <sup>1</sup>
+                    
 
+                    
+                    
 
-                
-                
+                    <a href="/tags/tags" class="text-blue-800 dark:text-blue-200">tags</a>
+                    <sup>1</sup>
 
-                
 
+                    
+                    
 
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
-                
+                    
 
-                <a href="/tags/testblog">testblog</a>
-                <sup>1</sup>
+                    
 
+                    
+                    
 
-                
-                
+                    <a href="/tags/test" class="text-blue-800 dark:text-blue-200">test</a>
+                    <sup>1</sup>
 
-                <hr>
-                <span>In Projects: </span>
-                
 
-                
+                    
+                    
 
-                
-                
+                    
 
-                
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
-                
+                    
+                    
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
-                
-                <a href="/tags/cloud">cloud</a>
-                <sup>2</sup>
-                
-                
+                    
 
-                
-                
+                    
+                    
 
-                
-                
-                
+                    <a href="/tags/testblog" class="text-blue-800 dark:text-blue-200">testblog</a>
+                    <sup>1</sup>
 
-                
 
-                
+                    
+                    
+                </div>
+                <div>
+                    <span>In Projects: </span>
+                    
 
-                
+                    
 
-                
+                    
+                    
 
-                
-                
-                <a href="/tags/datawarehouse">datawarehouse</a>
-                <sup>1</sup>
-                
-                
+                    
 
-                
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
+                    
 
-                
-                
-                
+                    
+                    
+                    
 
-                
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    <a href="/tags/cloud" class="text-blue-800 dark:text-blue-200">cloud</a>
+                    <sup>2</sup>
+                    
+                    
 
-                
+                    
+                    
 
-                
-                
-                
+                    
+                    
+                    
 
-                
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
 
-                
-                
-                
+                    
 
-                
+                    
+                    
+                    <a href="/tags/datawarehouse" class="text-blue-800 dark:text-blue-200">datawarehouse</a>
+                    <sup>1</sup>
+                    
+                    
 
-                
+                    
+                    
 
-                
-                
-                <a href="/tags/project">project</a>
-                <sup>2</sup>
-                
-                
+                    
 
-                
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
+                    
 
-                
-                
-                
+                    
 
-                
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
+                    
 
-                
-                
-                
+                    
+                    
+                    
 
-                
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    <a href="/tags/project" class="text-blue-800 dark:text-blue-200">project</a>
+                    <sup>2</sup>
+                    
+                    
 
-                
+                    
+                    
 
-                
-                
-                
+                    
 
-                
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
+                    
 
-                
-                
-                
+                    
 
-                
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
 
-                
+                    
+                    
+                    
 
-                
+                    
+                    
 
-                
-                
-                
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+                </div>
             </div>
         </div>
     </section>
 
 </div>
 
-    </main>
+        </main>
 
-    <footer>
-        <div class="container mt-5">
-            <hr>
-            <div class="d-flex justify-content-center mb-3">
-                <a href="https://github.com/ghoshabhik" target="_blank" class="m-4"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/abhik-ghosh/" target="_blank" class="m-4"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="https://medium.com/@ghoshabhik" target="_blank" class="m-4"><i class="fab fa-medium-m"></i></a>
+        <footer class="">
+            <div class="flex items-center justify-center">
+                
+                <div class="">&copy; Abhik Ghosh </div>
             </div>
-            <div class="d-flex justify-content-center mb-5">&copy; Abhik Ghosh | Built on Hugo 🤟🏼</div>
-        </div>
-        <div class="line-bar"></div>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-        crossorigin="anonymous"></script>
+            <div class="w-full h-2 
+            bg-gradient-to-r from-blue-500 to-green-500
+            dark:to-blue-500 dark:from-green-500
+            "></div>
+        </footer>
+    </div>
     <script src="/js/main.js"></script>
 </body>
 
