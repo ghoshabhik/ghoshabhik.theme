@@ -60,18 +60,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
   if(!localStorage.mode){
-      localStorage.mode = 'dark';
-      lightButton.classList.remove('hidden');
+      localStorage.mode = 'light';
+      darkButton.classList.remove('hidden');
   } else {
       if(localStorage.mode === 'light'){
           darkButton.classList.remove('hidden');
           lightButton.classList.add('hidden');
-          body.classList.toggle('dark');
+          // body.classList.toggle('dark');
+          // console.log('found light')
       }
       if(localStorage.mode === 'dark'){
           lightButton.classList.remove('hidden');
           darkButton.classList.add('hidden');
-          
+          body.classList.toggle('dark');
+          // console.log('found dark')
       }
   }
   
