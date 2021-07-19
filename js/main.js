@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   var currentPath = window.location.pathname
   currentPath = currentPath.substr(1,currentPath.length)
-  //console.log(currentPath)
+  console.log(currentPath)
   if(currentPath.length === 0){
     document.getElementById('home').classList.add('font-semibold')
     document.getElementById('home').classList.add('bg-gradient-to-r')
@@ -130,13 +130,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('bio').classList.add('text-transparent')
     document.getElementById('bio').classList.add('bg-clip-text')
   }
-  if(currentPath.includes('templates')){
-    document.getElementById('template').classList.add('font-semibold')
-    document.getElementById('template').classList.add('bg-gradient-to-r')
-    document.getElementById('template').classList.add('from-purple-500')
-    document.getElementById('template').classList.add('to-green-500')
-    document.getElementById('template').classList.add('text-transparent')
-    document.getElementById('template').classList.add('bg-clip-text')
+  if(currentPath.includes('contact')){
+    document.getElementById('contact').classList.add('font-semibold')
+    document.getElementById('contact').classList.add('bg-gradient-to-r')
+    document.getElementById('contact').classList.add('from-purple-500')
+    document.getElementById('contact').classList.add('to-green-500')
+    document.getElementById('contact').classList.add('text-transparent')
+    document.getElementById('contact').classList.add('bg-clip-text')
   }
 
 });
