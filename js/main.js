@@ -130,6 +130,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('bio').classList.add('text-transparent')
     document.getElementById('bio').classList.add('bg-clip-text')
   }
+  if(currentPath.includes('templates')){
+    document.getElementById('template').classList.add('font-semibold')
+    document.getElementById('template').classList.add('bg-gradient-to-r')
+    document.getElementById('template').classList.add('from-purple-500')
+    document.getElementById('template').classList.add('to-green-500')
+    document.getElementById('template').classList.add('text-transparent')
+    document.getElementById('template').classList.add('bg-clip-text')
+  }
 
 });
 
